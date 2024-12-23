@@ -21,7 +21,7 @@
 
   ```
 
-### For DAIR-V2X-C Dataset located at data floder
+### Download the dataset to the folder named data and form the following structure
 ├── cooperative-vehicle-infrastructure      # DAIR-V2X-C
     ├── infrastructure-side             # DAIR-V2X-C-I
         ├── image		    
@@ -74,7 +74,7 @@ Run the following command to convert DAIR-V2X
 python tools/dataset_converter/dair_vic2kitti_2.py
 ```
 
-### 5. After downloading the dataset, generate a pkl file：
+### 5. After downloading the dataset, generate pkl files：
 ```bash
   python tools/create_dair.py
 ```
