@@ -21,7 +21,7 @@
 
   ```
 
-### For DAIR-V2X-C Dataset located at ${DAIR-V2X-C_DATASET_ROOT}
+### For DAIR-V2X-C Dataset located at data floder
 ├── cooperative-vehicle-infrastructure      # DAIR-V2X-C
     ├── infrastructure-side             # DAIR-V2X-C-I
         ├── image		    
