@@ -24,7 +24,6 @@
 ```
 ### 4. Prepare dataset
 
-   Download DAIR-V2X dataset to data folder.
   ```
 
 ### For DAIR-V2X-C Dataset located at ${DAIR-V2X-C_DATASET_ROOT}
