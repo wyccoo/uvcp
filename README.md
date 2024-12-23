@@ -23,9 +23,10 @@
   pip install -v -e .
 ```
 4. Prepare dataset
+   
    Download v2u-coo dataset data folder
 
-5. After downloading the dataset, generate a pkl file：
+6. After downloading the dataset, generate a pkl file：
 ```bash
  python 
   python tools/create_data_bevdet_v2u.py
