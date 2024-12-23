@@ -1,6 +1,6 @@
 # UVCP-DAIR
 
-1. CUDA(11.3) installation：
+###1. CUDA(11.3) installation：
    
 ```bash
   wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin
@@ -11,19 +11,20 @@
   sudo apt-get update
   sudo apt-get -y install cuda
 ```
-2. Install Pytorch:
+###2. Install Pytorch:
 ```bash
   pip install torch==1.10.0+cu113 torchvision==0.11.0+cu113 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```
-3. Install dependent environment:
+###3. Install dependent environment:
 ```bash
   pip install -r requirements.txt
   pip install -v -e .
   cd nuscenes-devkit-1.1.3/setup/
   pip install -v -e .
 ```
-4. Prepare dataset
-   
+###4. Prepare dataset
+
+   Download DAIR-V2X dataset to data folder.
   ```
 
 ### For DAIR-V2X-C Dataset located at ${DAIR-V2X-C_DATASET_ROOT}
