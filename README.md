@@ -1,6 +1,6 @@
 # UVCP-DAIR
 
-###1. CUDA(11.3) installation：
+### 1. CUDA(11.3) installation：
    
 ```bash
   wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin
@@ -11,7 +11,7 @@
   sudo apt-get update
   sudo apt-get -y install cuda
 ```
-###2. Install Pytorch:
+### 2. Install Pytorch:
 ```bash
   pip install torch==1.10.0+cu113 torchvision==0.11.0+cu113 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```
@@ -22,7 +22,7 @@
   cd nuscenes-devkit-1.1.3/setup/
   pip install -v -e .
 ```
-###4. Prepare dataset
+### 4. Prepare dataset
 
    Download DAIR-V2X dataset to data folder.
   ```
@@ -73,18 +73,18 @@
         ├── data_info.json              # Relevant index information combined the Infrastructure data and the Vehicle data
 ```
 
-### Transform DAIR-V2X
+Transform DAIR-V2X
 
 Run the following command to convert DAIR-V2X
 ```python
 python tools/dataset_converter/dair_vic2kitti_2.py
 ```
 
-5. After downloading the dataset, generate a pkl file：
+### 5. After downloading the dataset, generate a pkl file：
 ```bash
   python tools/create_dair.py
 ```
-6. Test Model：
+### 6. Test Model：
 ```bash
   python tools/test.py configs/uvcp/uvcp-dair.py $checkpoint$ --eval map
 ```
