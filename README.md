@@ -15,7 +15,7 @@
 ```bash
   pip install torch==1.10.0+cu113 torchvision==0.11.0+cu113 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```
-###3. Install dependent environment:
+### 3. Install dependent environment:
 ```bash
   pip install -r requirements.txt
   pip install -v -e .
