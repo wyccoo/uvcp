@@ -19,6 +19,9 @@
 ```
 ### 4. Prepare dataset
 
+Download the dataset to the folder named data and form the following structure.\
+Download the dataset from https://thudair.baai.ac.cn/coop-dtest
+
   ```
 
 ### Download the dataset to the folder named data and form the following structure
@@ -66,6 +69,11 @@
             ├── {id}.json           
         ├── data_info.json              # Relevant index information combined the Infrastructure data and the Vehicle data
 ```
+After forming the dataset, run the following command
+```bash
+cp data/data_info.json data/cooperative-vehicle-infrastructure/cooperative/
+```
+
 
 Transform DAIR-V2X
 
