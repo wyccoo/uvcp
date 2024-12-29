@@ -1,10 +1,10 @@
 # UVCP-DAIR
 
-### 1. CUDA(11.3) installation：
+### 1. Prepare python and CUDA：
    
 ```bash
-   wget https://developer.download.nvidia.com/compute/cuda/11.3.1/local_installers/cuda_11.3.1_465.19.01_linux.run
-   sudo sh cuda_11.3.1_465.19.01_linux.run
+python==3.8
+CUDA==11.3
 ```
 ### 2. Install Pytorch:
 ```bash
@@ -16,6 +16,7 @@
   pip install -v -e .
   cd nuscenes-devkit-1.1.3/setup/
   pip install -v -e .
+  cd ../
 ```
 ### 4. Prepare dataset
 
