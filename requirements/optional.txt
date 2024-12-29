@@ -1,0 +1,6 @@
+open3d
+spconv
+motmetrics
+mmcv-full==1.5.3
+mmsegmentation==0.25.0
+mmdet==2.25.1
