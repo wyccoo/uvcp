@@ -429,7 +429,7 @@ def gen_calib2kitti_coop(source_root, target_root, label_type="lidar"):
     path_calib = os.path.join(target_root, "training/calib")
     mkdir_p(path_calib)
     
-    path = '..//cooperative-vehicle-infrastructure'
+    path = 'data/cooperative-vehicle-infrastructure'
     frame_pairs = read_json(os.path.join(path, "cooperative/data_info.json"))
     sensortype = 'camera'
     
