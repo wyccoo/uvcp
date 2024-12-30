@@ -76,7 +76,7 @@ Download the dataset from https://thudair.baai.ac.cn/coop-dtest
 ```
 After forming the dataset, run the following command
 ```bash
-mv data/split_datas/ data/cooperative-vehicle-infrastructure/
+cp -r data/split_datas/ data/cooperative-vehicle-infrastructure/
 cp data/data_info.json data/cooperative-vehicle-infrastructure/cooperative/
 ```
 
