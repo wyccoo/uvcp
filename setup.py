@@ -219,7 +219,7 @@ if __name__ == '__main__':
         license='Apache License 2.0',
         install_requires=parse_requirements('requirements/runtime.txt'),
         extras_require={
-            'all': parse_requirements('requirements.txt'),
+            'all': parse_requirements('requirements/all.txt'),
             'tests': parse_requirements('requirements/tests.txt'),
             'build': parse_requirements('requirements/build.txt'),
             'optional': parse_requirements('requirements/optional.txt'),
