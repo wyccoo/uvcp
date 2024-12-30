@@ -17,6 +17,10 @@ CUDA==11.3
   cd nuscenes-devkit-1.1.3/setup/
   pip install -v -e .
   cd ../
+  git clone https://github.com/klintan/pypcd.git
+  cd pypcd
+  python setup.py install
+  cd ../
 ```
 ### 4. Prepare dataset
 
@@ -80,7 +84,7 @@ Transform DAIR-V2X
 
 Run the following command to convert DAIR-V2X
 ```python
-python tools/dataset_converter/dair_vic2kitti_2.py
+python tools/data_converter/dair_vic2kitti_2.py
 ```
 
 ### 5. After downloading the dataset, generate pkl files：
