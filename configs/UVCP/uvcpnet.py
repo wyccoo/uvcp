@@ -1,9 +1,5 @@
 _base_ = ['../_base_/datasets/nus-3d.py', '../_base_/default_runtime.py']
-# Global
-# If point cloud range is changed, the models should also change their point
-# cloud range accordingly
 point_cloud_range = [-76.8, -76.8, -5.0, 76.8, 76.8, 3.0]
-# For nuScenes we usually do 10-class detection
 class_names = [
     'car', 'truck', 'bus', 'pedestrian'
 ]
@@ -127,8 +123,6 @@ model = dict(
             code_size=9),
         separate_head=dict(
             type='SeparateHead', init_bias=-2.19, final_kernel=3),
-        loss_cls=dict(type='GaussianFocalLoss', reduction='mean'),
-        loss_bbox=dict(type='L1Loss', reduction='mean', loss_weight=0.25),
         norm_bbox=True),
     # model training and testing settings
     test_cfg=dict(
