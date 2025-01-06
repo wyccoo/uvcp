@@ -12,15 +12,16 @@ CUDA==11.3
 ```
 ### 3. Install dependent environment:
 ```bash
-  pip install -r requirements.txt
-  pip install -v -e .
-  cd nuscenes-devkit-1.1.3/setup/
-  pip install -v -e .
-  cd ../
-  git clone https://github.com/klintan/pypcd.git
-  cd pypcd
-  python setup.py install
-  cd ../
+pip install -r requirements.txt
+pip install -v -e .
+rm -rf nuscenes-devkit-1.1.3/python-sdk/nuscenes_devkit.egg-info/
+cd nuscenes-devkit-1.1.3/setup/
+pip install -v -e .
+cd ../
+git clone https://github.com/klintan/pypcd.git
+cd pypcd
+python setup.py install
+cd ../
 ```
 ### 4. Prepare dataset
 
@@ -90,9 +91,9 @@ python tools/data_converter/dair_vic2kitti_2.py
 
 ### 5. After downloading the dataset, generate pkl files：
 ```bash
-  python tools/create_dair.py
+python tools/create_dair.py
 ```
 ### 6. Test Model：
 ```bash
-  python tools/test.py configs/uvcp/uvcp-dair.py $checkpoint$ --eval map
+python tools/test.py configs/uvcp/uvcp-dair.py $checkpoint$ --eval map
 ```
