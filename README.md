@@ -17,7 +17,7 @@ pip install -v -e .
 rm -rf nuscenes-devkit-1.1.3/python-sdk/nuscenes_devkit.egg-info/
 cd nuscenes-devkit-1.1.3/setup/
 pip install -v -e .
-cd ../
+cd ../../
 git clone https://github.com/klintan/pypcd.git
 cd pypcd
 python setup.py install
