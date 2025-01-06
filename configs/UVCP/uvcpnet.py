@@ -231,9 +231,6 @@ for key in ['val', 'test']:
     data[key].update(share_data_config)
 data['train']['dataset'].update(share_data_config)
 
-# Optimizer
-optimizer = dict(type='AdamW', lr=2e-4, weight_decay=1e-2)
-optimizer_config = dict(grad_clip=dict(max_norm=5, norm_type=2))
 lr_config = dict(
     policy='step',
     warmup='linear',
